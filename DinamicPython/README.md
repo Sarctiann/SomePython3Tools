@@ -12,6 +12,7 @@ Of course, this simple "little single file program" does not represent an altern
 
 ![](../Resources/DinamicPython1.png)
 ![](../Resources/DinamicPython2.png)
+> Now all button texts and code comments are in **English**.
 
 ---
 

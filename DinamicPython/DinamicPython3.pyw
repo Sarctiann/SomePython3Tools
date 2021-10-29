@@ -46,7 +46,7 @@ class root(Tk):
     
     def __init__(self):
         super().__init__()
-        self.title('Python Dinamico')
+        self.title('Dinamic Python')
         self.resizable(True, True)
         self.geometry('+100+25')
         self.editor = ScrolledText(self,
@@ -74,21 +74,21 @@ class root(Tk):
         self.editor.pack(expand=True, fill='both', side='top')
         self.out.pack(fill='x', side='top')
         ###--------------------------------------------------------------------
-        Button(self, text= 'Guardar Programa <Ctrl+s>', bg= '#55aadd',
+        Button(self, text= 'Save Script <Ctrl+s>', bg= '#55aadd',
             activebackground="#3388bb",
             command= lambda: root.guardar(self, self.editor)).pack(
                 expand=True, fill='x', side='left')
         self.editor.bind('<Control_L>'+'<s>',
                       lambda *args: root.guardar(self, self.editor))
         ###--------------------------------------------------------------------
-        Button(self, text= 'Guardar Salida <Crl+d>', bg= '#55aadd',
+        Button(self, text= 'Save Output <Crl+d>', bg= '#55aadd',
             activebackground="#3388bb",
             command= lambda: root.guardar(self, self.out)).pack(
                 expand=True, fill='x', side='left')
         self.editor.bind('<Control_L>'+'<d>',
                       lambda *args: root.guardar(self, self.editor))
         ###--------------------------------------------------------------------
-        Button(self, text= 'Salir <Ctrl+Shift+Q>', bg= '#dd6666',
+        Button(self, text= 'Close <Ctrl+Shift+Q>', bg= '#dd6666',
             activebackground="#bb3333",
             command= lambda: root.salir(self)).pack(
                 expand=True, fill='x', side='left')
@@ -141,13 +141,14 @@ class root(Tk):
             r"(\"{1}[^\"]*\"{1})",
             r"(\'{1}[^\']*\'{1})",
         ])
-        """ no encuentro una expresión regular 
-            para resaltar los strings multilinea
-            como este :( correctamente
-            pero lógicamente funcionan igual.
 
-            Todo por culpa de los regex TCL no son
-            como los de Python...
+        """ I can't find a regular expression
+            to highlight multiline strings
+            like this correctly :(
+            but logically they work anyway.
+
+            All because of the TCL regex are not
+            like those of Python ...
         """
         ml_strings = "|".join([
             r"(\"{3}[[:print:][:space:]]*\"{3})",
