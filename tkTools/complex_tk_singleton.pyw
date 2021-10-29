@@ -13,7 +13,6 @@ class SingleTk(type):
     def deleter(cls):
         cls._instance.pop().destroy()
 
-
 class TrigSingleTk(type):
 
     _instance = set()
@@ -32,27 +31,32 @@ class TrigSingleTk(type):
     def deleter(cls):
         cls._instance.pop().destroy()
 
-
 if __name__ == "__main__":
 
     import tkinter as tk
 
     class TestA(tk.Toplevel, metaclass=TrigSingleTk):
-        def __init__(self, nombre, *args, **kwargs):
+        def __init__(self, name, *args, **kwargs):
             super().__init__()
-            tk.Label(self, text=nombre).pack()
+            self.geometry('100x75+300+350')
+            tk.Label(self, text=name).pack()
 
     class TestB(tk.Toplevel, metaclass=SingleTk):
-        def __init__(self, nombre, *args, **kwargs):
+        def __init__(self, name, *args, **kwargs):
             super().__init__()
-            tk.Label(self, text=nombre).pack()
+            self.geometry('100x75+400+350')
+            tk.Label(self, text=name).pack()
 
-    class Ventana(tk.Tk):
+    class Root(tk.Tk):
         def __init__(self, *args, **kwargs):
             super().__init__()
-            tk.Button(self, text='Ventana >>> A', command=lambda: TestA("A")).pack()
-            tk.Button(self, text='Ventana >>> B', command=lambda: TestA("B")).pack()
-            tk.Button(self, text='Ventana Unica', command=lambda: TestB("C")).pack()
+            self.geometry('+300+200')
+            tk.Button(
+                self, text='Window >>> A', command=lambda: TestA("A")).pack()
+            tk.Button(
+                self, text='Window >>> B', command=lambda: TestA("B")).pack()
+            tk.Button(
+                self, text='Window Unica', command=lambda: TestB("C")).pack()
 
-    a = Ventana()
-    a.mainloop()
+    root = Root()
+    root.mainloop()
