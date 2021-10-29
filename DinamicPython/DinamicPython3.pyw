@@ -34,7 +34,7 @@ tagsConf = [
             ("operator",    "orange"),
             ("clousures",   "goldenrod"),
             ("string",      "springgreen3"),
-            ("ml_string",      "springgreen3"),
+            ("ml_string",   "springgreen3"),
             ("comment",     "grey35"),
         ]
 

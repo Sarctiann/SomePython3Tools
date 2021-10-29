@@ -11,3 +11,5 @@ This repository contains a code of practice. It might be useful for those of you
 :ear: I hear proposals to write new scripts from my current experience, to add here. :blue_heart: I will always be grateful for the large number of people who share their knowledge. And I think it would be a good way to return what I received!
 
 ***
+
+> Some scripts have the extension .pyw. That is for Windows to run as GUIs (with pythonw.exe instead of python.exe) I'm using linux but I keep the habit.
