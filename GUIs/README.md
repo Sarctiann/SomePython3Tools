@@ -2,7 +2,7 @@
 
 ***
 
-## TranFrec
+## FreqTransp
 
 This is a simple tool to display the musical notes with their corresponding frequencies.
 
