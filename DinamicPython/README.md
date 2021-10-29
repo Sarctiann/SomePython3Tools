@@ -18,8 +18,38 @@ Of course, this simple "little single file program" does not represent an altern
 
 Because I wanted to keep this simple. This is a single file program. After Imports, you would see some parameters for the customization:
 
+```python
+# ########################### CONFIGURACION ####################################
 
-![](../Resources/DinamicPython3.png)
+DEBUG = False
+
+EDITOR_FONT = 'Lucida\ Console 12 bold' # ("Lucida console", 12, "bold")
+E_DEFAULT_HEIGHT = 18
+E_BG_COLOR = '#e0e0e0'
+
+OUTPUT_FONT = 'Lucida\ Console 11 bold'
+O_HEIGHT = 12
+O_COLORS = {
+    "fg": "#f0f0f0", 
+    "bg": "#505050"
+}
+
+# don't change the keys of the pairs | The order matters
+# tcl color names: http://patriciaemiguel.com/assets/tkinter_colores.png
+tagsConf = [
+            ("keyword",     "purple"),
+            ("builtin",     "cyan3"),
+            ("builtin2",    "deepskyblue3"),
+            ("number",      "orange red"),
+            ("operator",    "orange"),
+            ("clousures",   "goldenrod"),
+            ("string",      "springgreen3"),
+            ("ml_string",   "springgreen3"),
+            ("comment",     "grey35"),
+        ]
+
+################################################################################
+```
 
 Also you can practice adding some features like:
 

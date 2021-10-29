@@ -24,7 +24,7 @@ O_COLORS = {
     "bg": "#505050"
 }
 
- # don't change the keys of the pairs | The order matters
+# don't change the keys of the pairs | The order matters
 # tcl color names: http://patriciaemiguel.com/assets/tkinter_colores.png
 tagsConf = [
             ("keyword",     "purple"),
