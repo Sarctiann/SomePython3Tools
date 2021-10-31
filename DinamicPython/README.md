@@ -1,5 +1,5 @@
 # Dinamic Python
-
+### [ ◀️ Go Back](https://github.com/Sarctiann/SomePython3Tools)
 ***
 
 This is a simple python executor like IDLE, but basic.
@@ -66,3 +66,5 @@ Also you can practice adding some features like:
 
 + Find a better re pattern for multiline strings. (tcl's regexp 🤦).
 + Add Suggestions and auto-complete.
+
+### [ ◀️ Go Back](https://github.com/Sarctiann/SomePython3Tools)
