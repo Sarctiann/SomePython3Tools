@@ -9,7 +9,7 @@ import tkinter.font as tkfont
 from keyword import kwlist
 import sys
 
-# ########################### CONFIGURACION ####################################
+# ################################ SETTINGS ####################################
 
 DEBUG = False
 
