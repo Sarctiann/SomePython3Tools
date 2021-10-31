@@ -4,7 +4,7 @@
 
 ## SorteredDict
 
-This module provide the **sort_dict** function for sort a Dictionary
+This module provide the **sort_dict** function to sort a Dictionary
 
 A Sample
 ```python
